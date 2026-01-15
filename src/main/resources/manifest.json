@@ -1,11 +1,11 @@
 {
-    "Group": "Jordan",
+    "Group": "Jordansbored",
     "Name": "QuadTannery",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "Description": "Adds Double Tannery (2x speed) and Quad Tannery (4x speed) processing benches with extra slots.",
     "Authors": [
         {
-            "Name": "Jordan",
+            "Name": "Jordansbored",
             "Url": "https://www.curseforge.com/members/jordansbored/projects"
         }
     ],
