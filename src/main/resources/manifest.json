@@ -1,0 +1,23 @@
+{
+    "Group": "Jordan",
+    "Name": "QuadTannery",
+    "Version": "1.0.0",
+    "Description": "Adds Double Tannery (2x speed) and Quad Tannery (4x speed) processing benches with extra slots.",
+    "Authors": [
+        {
+            "Name": "Jordan",
+            "Url": "https://www.curseforge.com/members/jordansbored/projects"
+        }
+    ],
+    "Website": "https://www.curseforge.com/members/jordansbored/projects",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "com.example.quadtannery.QuadTanneryPlugin",
+    "IncludesAssetPack": true
+}

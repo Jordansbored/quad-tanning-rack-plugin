@@ -1,0 +1,127 @@
+{
+  "TranslationProperties": {
+    "Name": "Double Tannery",
+    "Description": "A powerful tannery that processes leather twice as fast!"
+  },
+  "Icon": "Icons/ItemsGenerated/Bench_Tannery.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Bench_Tannery",
+        "Quantity": 2
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Bench_DoubleTannery",
+        "Metadata": {
+          "BlockState": {
+            "Type": "processingBench"
+          }
+        }
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ],
+    "TimeSeconds": 3
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Blocks/Benches/Tannery.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/Tannery_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Tannery",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Processing",
+      "Input": [
+        { "FilterValidIngredients": true },
+        { "FilterValidIngredients": true },
+        { "FilterValidIngredients": true },
+        { "FilterValidIngredients": true }
+      ],
+      "OutputSlotsCount": 4,
+      "LocalOpenSoundEventId": "SFX_Lumbermill_Bench_Open",
+      "LocalCloseSoundEventId": "SFX_Lumbermill_Bench_Close",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "DoubleTannery",
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              { "ItemId": "Ingredient_Leather_Light", "Quantity": 10 },
+              { "ItemId": "Ingredient_Leather_Medium", "Quantity": 10 },
+              { "ItemId": "Ingredient_Leather_Heavy", "Quantity": 10 },
+              { "ItemId": "Ingredient_Chitin_Sturdy", "Quantity": 10 }
+            ],
+            "TimeSeconds": 3
+          },
+          "CraftingTimeReductionModifier": 0.5
+        },
+        {
+          "CraftingTimeReductionModifier": 0.6,
+          "ExtraInputSlot": 1,
+          "ExtraOutputSlot": 2
+        }
+      ]
+    },
+    "State": {
+      "Id": "processingBench",
+      "Definitions": {
+        "Processing": {
+          "Looping": true,
+          "CustomModelAnimation": "Blocks/Benches/Lumbermill_Crafting.blockyanim"
+        },
+        "ProcessCompleted": {
+          "Looping": true,
+          "CustomModelAnimation": "Blocks/Benches/Lumbermill_Crafting.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "Support": {
+      "Down": [
+        { "FaceType": "Full" }
+      ]
+    },
+    "ParticleColor": "#63422b",
+    "BlockSoundSetId": "Wood",
+    "Interactions": {
+      "Use": "Open_Processing_Bench"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Translation": [ 11.4, -9 ],
+    "Rotation": [ 22.5, 45, 22.5 ]
+  },
+  "Tags": {
+    "Type": [ "Bench" ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 3,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}
