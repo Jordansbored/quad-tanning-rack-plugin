@@ -61,7 +61,7 @@
       "LocalCloseSoundEventId": "SFX_Lumbermill_Bench_Close",
       "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
       "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
-      "Id": "DoubleTannery",
+      "Id": "Tannery",
       "TierLevels": [
         {
           "UpgradeRequirement": {
