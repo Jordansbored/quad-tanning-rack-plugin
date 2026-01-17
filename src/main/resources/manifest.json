@@ -1,7 +1,7 @@
 {
     "Group": "Jordansbored",
     "Name": "QuadTannery",
-    "Version": "1.0.2",
+    "Version": "1.0.3",
     "Description": "Adds Double Tannery (2x speed) and Quad Tannery (4x speed) processing benches with extra slots.",
     "Authors": [
         {

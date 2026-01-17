@@ -11,7 +11,12 @@
     "Input": [
       {
         "ItemId": "Bench_DoubleTannery",
-        "Quantity": 2
+        "Quantity": 2,
+        "Metadata": {
+          "BlockState": {
+            "Type": "processingBench"
+          }
+        }
       }
     ],
     "Output": [
