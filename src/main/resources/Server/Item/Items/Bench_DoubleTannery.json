@@ -7,39 +7,6 @@
   "Categories": [
     "Furniture.Benches"
   ],
-  "Recipe": {
-    "Input": [
-      {
-        "ItemId": "Bench_Tannery",
-        "Quantity": 2,
-        "Metadata": {
-          "BlockState": {
-            "Type": "processingBench"
-          }
-        }
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Bench_DoubleTannery",
-        "Metadata": {
-          "BlockState": {
-            "Type": "processingBench"
-          }
-        }
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Workbench_Crafting"
-        ],
-        "Id": "Workbench"
-      }
-    ],
-    "TimeSeconds": 3
-  },
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",

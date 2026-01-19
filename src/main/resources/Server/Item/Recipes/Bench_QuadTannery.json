@@ -1,0 +1,24 @@
+{
+  "Input": [
+    {
+      "ItemId": "Bench_DoubleTannery",
+      "Quantity": 2
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Bench_QuadTannery",
+    "Quantity": 1
+  },
+  "OutputQuantity": 1,
+  "BenchRequirement": [
+    {
+      "Type": "Crafting",
+      "Categories": [
+        "Workbench_Crafting"
+      ],
+      "Id": "Workbench"
+    }
+  ],
+  "TimeSeconds": 3,
+  "KnowledgeRequired": false
+}

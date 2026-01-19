@@ -32,13 +32,11 @@ public class QuadTanneryPlugin extends JavaPlugin {
     protected void setup() {
         LOGGER.atInfo().log("Setting up Double/Quad Tannery plugin...");
         
-        // Register the command for testing/info
         this.getCommandRegistry().registerCommand(new QuadTanneryCommand());
-        
-        // The item/block definitions are loaded automatically from the resources folder
-        // They use Hytale's built-in ProcessingBench system, so no custom Java code needed
+        this.getCommandRegistry().registerCommand(new FixTanneriesCommand());
         
         LOGGER.atInfo().log("Double/Quad Tannery plugin setup complete!");
         LOGGER.atInfo().log("Craft: 2x Tannery -> Double Tannery, 2x Double Tannery -> Quad Tannery");
+        LOGGER.atInfo().log("Use /fixtanneries to fix tanneries in your inventory for crafting.");
     }
 }
