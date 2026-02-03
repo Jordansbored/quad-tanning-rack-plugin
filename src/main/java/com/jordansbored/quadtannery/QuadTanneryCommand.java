@@ -1,4 +1,4 @@
-package com.example.quadtannery;
+package com.jordansbored.quadtannery;
 
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.Message;

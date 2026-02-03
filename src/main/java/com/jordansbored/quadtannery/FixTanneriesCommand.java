@@ -1,4 +1,4 @@
-package com.example.quadtannery;
+package com.jordansbored.quadtannery;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;

@@ -18,6 +18,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "com.example.quadtannery.QuadTanneryPlugin",
+    "Main": "com.jordansbored.quadtannery.QuadTanneryPlugin",
     "IncludesAssetPack": true
 }
